@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pet Family — petshop com banho, tosa, higiene e muito carinho para o seu melhor amigo. Agende seu atendimento agora mesmo." />
+  <title>Pet Family — Cuidado completo para o seu pet</title>
+
+  <meta property="og:title" content="Pet Family — Petshop" />
+  <meta property="og:description" content="Cuidado, carinho e tudo o que seu pet precisa em um só lugar." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg" />
+
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+
+      <a href="#inicio" class="logo" aria-label="Pet Family — ir para o início">
+        <div class="logo-paw" aria-hidden="true">🐾</div>
+        Pet <span>Family</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul class="nav-list" role="list">
+          <li><a href="#inicio"   class="nav-link">Início</a></li>
+          <li><a href="#servicos" class="nav-link">Serviços</a></li>
+          <li><a href="#produtos" class="nav-link">Produtos</a></li>
+          <li><a href="#sobre"    class="nav-link">Sobre</a></li>
+          <li><a href="#contato"  class="nav-link">Contato</a></li>
+        </ul>
+        <a href="#contato" class="btn btn-primary btn-schedule">Agendar atendimento</a>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:.6rem">
+        <button class="btn-theme" id="btn-theme" aria-label="Ativar modo escuro" title="Alternar tema claro/escuro">🌙</button>
+        <button class="btn-menu" id="btn-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+    <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+    <nav class="mobile-nav-panel">
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Fechar menu">✕</button>
+      <a href="#inicio"   class="mobile-nav-link">Início</a>
+      <a href="#servicos" class="mobile-nav-link">Serviços</a>
+      <a href="#produtos" class="mobile-nav-link">Produtos</a>
+      <a href="#sobre"    class="mobile-nav-link">Sobre</a>
+      <a href="#contato"  class="mobile-nav-link">Contato</a>
+      <a href="#contato"  class="btn btn-primary btn-lg mobile-nav-cta">Agendar atendimento</a>
+    </nav>
+  </div>
+
+  <main id="inicio">
+
+    <section class="hero section" aria-label="Boas-vindas" id="hero">
+      <div class="hero-bg" role="img" aria-label="Cão dourado feliz ao ar livre"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <span class="hero-label">Bem-vindo à Pet Family</span>
+        <h1 class="hero-title">
+          Cuidado completo<br>para o seu <em>melhor amigo</em>
+        </h1>
+        <p class="hero-subtitle">
+          Banho, tosa, higiene e muito carinho — tudo o que o seu pet merece em um só lugar, com atendimento humanizado e ambiente acolhedor.
+        </p>
+        <div class="hero-actions">
+          <a href="#servicos" class="btn btn-primary btn-lg">Ver serviços</a>
+          <a href="#contato"  class="btn btn-outline btn-lg">Fale conosco</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicos" aria-labelledby="servicos-titulo">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">O que oferecemos</span>
+          <h2 class="section-title" id="servicos-titulo">Serviços pensados para o bem-estar do seu pet</h2>
+          <p class="section-desc">Profissionais experientes, produtos de qualidade e muito carinho em cada atendimento.</p>
+        </div>
+
+        <div class="services-grid" role="list">
+
+          <article class="service-card" role="listitem">
+            <div class="service-icon" aria-hidden="true">🛁</div>
+            <h3>Banho</h3>
+            <p>Banho completo com produtos hipoalergênicos, secagem cuidadosa e finalização perfumada. Seu pet sai cheiroso e feliz.</p>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <div class="service-icon" aria-hidden="true">✂️</div>
+            <h3>Tosa</h3>
+            <p>Tosa higiênica ou modelada, realizada por tosadores especializados que respeitam o perfil de cada raça.</p>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <div class="service-icon" aria-hidden="true">🦷</div>
+            <h3>Higiene</h3>
+            <p>Limpeza de ouvidos, corte de unhas e escovação dentária para manter seu pet saudável do focinho à cauda.</p>
+          </article>
+
+          <article class="service-card" role="listitem">
+            <div class="service-icon" aria-hidden="true">🩺</div>
+            <h3>Atendimento Especializado</h3>
+            <p>Consultas com médicos veterinários parceiros, vacinação e orientação nutricional para todas as espécies.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section products-section" id="produtos" aria-labelledby="produtos-titulo">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Nossa loja</span>
+          <h2 class="section-title" id="produtos-titulo">Produtos escolhidos com carinho</h2>
+          <p class="section-desc">Selecionamos apenas marcas confiáveis para que seu pet tenha o melhor.</p>
+        </div>
+
+        <div class="products-grid">
+
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="./assets/images/product-racao.jpg"
+              alt="Sacas de ração premium para cães e gatos organizadas em prateleiras"
+              loading="lazy"
+            />
+            <div class="product-body">
+              <h3>Rações Premium</h3>
+              <p>Nutrição completa e equilibrada para cães e gatos de todas as idades, tamanhos e necessidades especiais.</p>
+              <a href="#contato" class="btn btn-outline btn-sm">Saiba mais</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="./assets/images/product-brinquedos.jpg"
+              alt="Variedade de brinquedos coloridos para pets em exposição"
+              loading="lazy"
+            />
+            <div class="product-body">
+              <h3>Brinquedos</h3>
+              <p>Mordedores, bolinhas, cordas e brinquedos interativos para manter seu pet ativo e entretido.</p>
+              <a href="#contato" class="btn btn-outline btn-sm">Saiba mais</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="./assets/images/product-acessorios.jpg"
+              alt="Acessórios para pets: coleiras, guias, caminhas e comedouros"
+              loading="lazy"
+            />
+            <div class="product-body">
+              <h3>Acessórios</h3>
+              <p>Coleiras, guias, caminhas, bebedouros automáticos e tudo que seu pet precisa para o dia a dia.</p>
+              <a href="#contato" class="btn btn-outline btn-sm">Saiba mais</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              class="product-img"
+              src="./assets/images/product-higiene.jpg"
+              alt="Produtos de higiene para pets: shampoos, condicionadores e perfumes"
+              loading="lazy"
+            />
+            <div class="product-body">
+              <h3>Itens de Higiene</h3>
+              <p>Shampoos, condicionadores, perfumes, escovas e tudo para manter seu pet sempre limpo e cheiroso.</p>
+              <a href="#contato" class="btn btn-outline btn-sm">Saiba mais</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-image-wrap">
+            <img
+              class="about-image"
+              src="./assets/images/about-pets.jpg"
+              alt="Dois cães brincando juntos em um ambiente acolhedor"
+              loading="lazy"
+            />
+            <div class="about-badge" aria-label="Mais de 10 anos de experiência">
+              <strong>+10</strong>
+              <span>anos de experiência</span>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <span class="section-label">Sobre nós</span>
+            <h2 class="section-title" id="sobre-titulo">Aqui, seu pet é da família</h2>
+
+            <p>A Pet Family nasceu do amor genuíno pelos animais. Há mais de uma década, nossa equipe dedica cada dia para garantir que cães, gatos e outros pets recebam o cuidado que merecem — com atenção, respeito e muito carinho.</p>
+
+            <p>Trabalhamos com um ambiente limpo, seguro e acolhedor, onde tanto os tutores quanto os pets se sentem bem-vindos desde o primeiro contato. Cada atendimento é personalizado, porque entendemos que todo animal tem sua história e suas necessidades.</p>
+
+            <ul class="about-features">
+              <li class="feature-item">
+                <span class="feature-icon" aria-hidden="true">✓</span>
+                Equipe treinada e apaixonada por animais
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon" aria-hidden="true">✓</span>
+                Produtos 100% seguros e certificados
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon" aria-hidden="true">✓</span>
+                Ambiente limpo, seguro e climatizado
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon" aria-hidden="true">✓</span>
+                Atendimento humanizado para tutores e pets
+              </li>
+            </ul>
+
+            <a href="#contato" class="btn btn-primary btn-lg">Agendar uma visita</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" aria-labelledby="galeria-titulo">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Nosso espaço</span>
+          <h2 class="section-title" id="galeria-titulo">Momentos que fazem a diferença</h2>
+          <p class="section-desc">Um ambiente pensado para que seu pet se sinta em casa.</p>
+        </div>
+
+        <div class="gallery-grid" role="list">
+
+          <div class="gallery-item" role="listitem">
+            <img
+              src="./assets/images/gallery-golden.jpg"
+              alt="Cão golden retriever com expressão feliz e relaxada"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="gallery-item" role="listitem">
+            <img
+              src="./assets/images/gallery-cat.jpg"
+              alt="Gato laranja descansando tranquilamente em uma superfície macia"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="gallery-item" role="listitem">
+            <img
+              src="./assets/images/gallery-banho-tosa.jpg"
+              alt="Cão bem cuidado após banho e tosa em petshop"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="gallery-item" role="listitem">
+            <img
+              src="./assets/images/gallery-abraco.jpg"
+              alt="Tutora abraçando seu cachorro com afeto e carinho"
+              loading="lazy"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="depoimentos-titulo">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">O que dizem sobre nós</span>
+          <h2 class="section-title" id="depoimentos-titulo">Tutores satisfeitos, pets ainda mais</h2>
+          <p class="section-desc">A opinião de quem confia o seu pet à nossa equipe.</p>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">"Levo a Mel, minha labrador, há dois anos na Pet Family. O atendimento é impecável, ela chega animada e volta cheirosa. Nunca precisei me preocupar — confio de olhos fechados."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">👩</div>
+              <div>
+                <div class="author-name">Fernanda Oliveira</div>
+                <div class="author-pet">Tutora da Mel (Labrador, 4 anos)</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">"Meu gato Rex é muito ansioso, mas aqui ele fica tranquilo. A equipe sabe lidar com cada personalidade. Tosa e higiene nota 10. Não trocaria por nenhum outro lugar."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">👨</div>
+              <div>
+                <div class="author-name">Carlos Mendes</div>
+                <div class="author-pet">Tutor do Rex (Persa, 3 anos)</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">"Sempre fui cuidadosa na escolha do petshop dos meus filhotes. A Pet Family me conquistou pelo carinho genuíno e pela transparência. Recomendo de coração para todos os tutores."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">👩‍🦱</div>
+              <div>
+                <div class="author-name">Mariana Costa</div>
+                <div class="author-pet">Tutora de Thor e Luna (Yorkies)</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contato" aria-labelledby="contato-titulo">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:3rem">
+          <span class="section-label">Entre em contato</span>
+          <h2 class="section-title" id="contato-titulo">Agende o atendimento do seu pet</h2>
+          <p class="section-desc">Preencha o formulário e nossa equipe entra em contato em até 24 horas.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <aside>
+            <h3>Onde estamos</h3>
+            <p>Visite-nos ou entre em contato pelos canais abaixo. Ficamos felizes em atender você e seu pet.</p>
+
+            <address style="font-style:normal">
+              <div class="contact-item">
+                <div class="contact-icon" aria-label="Endereço">📍</div>
+                <div class="contact-item-text">
+                  <strong>Endereço</strong>
+                  <span>Rua das Flores, 248 — Jardim Primavera<br>São Paulo – SP, CEP 04250-090</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-label="Telefone">📞</div>
+                <div class="contact-item-text">
+                  <strong>Telefone / WhatsApp</strong>
+                  <span>(11) 98765-4321</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-label="Horário">🕐</div>
+                <div class="contact-item-text">
+                  <strong>Horário de funcionamento</strong>
+                  <span>Seg–Sex: 8h às 19h<br>Sábado: 8h às 17h<br>Domingo: 9h às 14h</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-label="E-mail">✉️</div>
+                <div class="contact-item-text">
+                  <strong>E-mail</strong>
+                  <span>contato@petfamily.com.br</span>
+                </div>
+              </div>
+            </address>
+          </aside>
+
+          <div class="form-card">
+            <h3>Formulário de agendamento</h3>
+
+            <form id="contact-form" novalidate aria-label="Formulário de contato e agendamento">
+
+              <div class="form-row">
+                <div class="form-group" data-field="tutor_name">
+                  <label for="tutor_name">Nome do tutor <span aria-hidden="true">*</span></label>
+                  <input
+                    type="text"
+                    id="tutor_name"
+                    name="tutor_name"
+                    placeholder="Seu nome completo"
+                    autocomplete="name"
+                    required
+                    aria-required="true"
+                    aria-describedby="tutor_name-error"
+                  />
+                  <span class="field-error" id="tutor_name-error" role="alert"></span>
+                </div>
+
+                <div class="form-group" data-field="email">
+                  <label for="email">E-mail <span aria-hidden="true">*</span></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="seu@email.com"
+                    autocomplete="email"
+                    required
+                    aria-required="true"
+                    aria-describedby="email-error"
+                  />
+                  <span class="field-error" id="email-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group" data-field="phone">
+                  <label for="phone">Telefone <span aria-hidden="true">*</span></label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="(11) 99999-9999"
+                    autocomplete="tel"
+                    required
+                    aria-required="true"
+                    aria-describedby="phone-error"
+                  />
+                  <span class="field-error" id="phone-error" role="alert"></span>
+                </div>
+
+                <div class="form-group" data-field="pet_name">
+                  <label for="pet_name">Nome do pet <span aria-hidden="true">*</span></label>
+                  <input
+                    type="text"
+                    id="pet_name"
+                    name="pet_name"
+                    placeholder="Como seu pet se chama?"
+                    required
+                    aria-required="true"
+                    aria-describedby="pet_name-error"
+                  />
+                  <span class="field-error" id="pet_name-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-group" data-field="service">
+                <label for="service">Serviço desejado <span aria-hidden="true">*</span></label>
+                <select
+                  id="service"
+                  name="service"
+                  required
+                  aria-required="true"
+                  aria-describedby="service-error"
+                >
+                  <option value="">Selecione um serviço…</option>
+                  <option value="banho">Banho</option>
+                  <option value="tosa">Tosa</option>
+                  <option value="banho_tosa">Banho + Tosa</option>
+                  <option value="higiene">Higiene completa</option>
+                  <option value="consulta">Consulta veterinária</option>
+                  <option value="vacinacao">Vacinação</option>
+                  <option value="outro">Outro / dúvida geral</option>
+                </select>
+                <span class="field-error" id="service-error" role="alert"></span>
+              </div>
+
+              <div class="form-group" data-field="message">
+                <label for="message">Mensagem <span aria-hidden="true">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Fale um pouco sobre seu pet, a raça, alguma necessidade especial ou a data preferida para o agendamento…"
+                  required
+                  aria-required="true"
+                  aria-describedby="message-error"
+                ></textarea>
+                <span class="field-error" id="message-error" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;margin-top:.25rem">
+                Enviar mensagem
+              </button>
+
+              <div class="form-success" id="form-success" role="status" aria-live="polite">
+                <span aria-hidden="true">✅</span>
+                Mensagem enviada com sucesso! Nossa equipe entrará em contato em breve.
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#inicio" class="logo" style="color:#fff" aria-label="Pet Family — topo da página">
+            <div class="logo-paw" aria-hidden="true">🐾</div>
+            Pet <span>Family</span>
+          </a>
+          <p>Cuidado com carinho desde 2014. Somos o lugar onde o seu pet se sente em família.</p>
+
+          <nav aria-label="Redes sociais">
+            <ul class="footer-social" role="list">
+              <li><a href="#" class="social-link" aria-label="Pet Family no Instagram" rel="noopener">📸</a></li>
+              <li><a href="#" class="social-link" aria-label="Pet Family no Facebook" rel="noopener">📘</a></li>
+              <li><a href="#" class="social-link" aria-label="Pet Family no WhatsApp" rel="noopener">💬</a></li>
+              <li><a href="#" class="social-link" aria-label="Pet Family no TikTok" rel="noopener">🎵</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul role="list">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Serviços</h4>
+          <ul role="list">
+            <li><a href="#servicos">Banho</a></li>
+            <li><a href="#servicos">Tosa</a></li>
+            <li><a href="#servicos">Higiene</a></li>
+            <li><a href="#servicos">Veterinário</a></li>
+            <li><a href="#servicos">Vacinação</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Fale conosco</h4>
+          <ul role="list">
+            <li><a href="tel:+5511987654321">(11) 98765-4321</a></li>
+            <li><a href="mailto:contato@petfamily.com.br">contato@petfamily.com.br</a></li>
+            <li><span style="color:rgba(255,255,255,.5);font-size:.85rem;line-height:1.6">Rua das Flores, 248<br>Jardim Primavera, SP</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Pet Family. Todos os direitos reservados.</p>
+        <p>Feito com 🐾 e carinho para os melhores amigos</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>
+
